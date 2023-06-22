@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <math.h>
 /**
  * main - check the code
  *
@@ -7,10 +8,17 @@
  */
 int main(void)
 {
-    print_triangle(2);
-    print_triangle(10);
-    print_triangle(1);
-    print_triangle(0);
-    return (0);
-}
+	long x,m;
+	long num= 612852475143;
+	double square= sqrt(num);
 
+	for( x=1; x<=square; x++)
+	{
+		if(num % x ==0)
+		{
+			m=num / x;
+		}
+	}
+	printf("%ld\n", m);
+	return(0);
+}
